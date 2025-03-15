@@ -111,7 +111,7 @@ const navigateToUserDashboard = (userType) => {
     
     try {
       console.log("Submitting login data:", formData);
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch('https://smartappkey-1.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -362,7 +362,7 @@ const InterestsStep = ({ data, updateData, onNext, onPrev, onRegistrationSuccess
       console.log("Submitting registration data:", updatedData);
       
       // Send data to backend
-      const response = await fetch('/api/auth/register', {
+      const response = await fetch('https://smartappkey-1.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
