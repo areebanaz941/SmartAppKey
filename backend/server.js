@@ -145,7 +145,7 @@ mongoose.connect(MONGODB_URI, {
   // Start the server
   app.listen(PORT, () => {
     console.log(`✅ Server running on port ${PORT}`);
-    console.log(`API available at: http://localhost:${PORT}/api`);
+    console.log(`API available at: https://smartappkey-1.onrender.com/api`);
   });
 })
 .catch(err => {
